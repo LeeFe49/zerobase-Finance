@@ -1,7 +1,6 @@
 package com.example.dividend.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 
 import java.util.ArrayList;
@@ -12,7 +11,7 @@ import java.util.List;
 public class ScrapedResult {
 
     private Company company;
-    private List<Dividend> dividendEntities;
+    private List<Dividend> dividends;
 
-    public ScrapedResult() {this.dividendEntities = new ArrayList<>();}
+    public ScrapedResult() {this.dividends = new ArrayList<>();}
 }
