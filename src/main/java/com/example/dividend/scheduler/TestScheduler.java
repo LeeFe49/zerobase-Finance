@@ -10,4 +10,14 @@ public class TestScheduler {
     public void test() {
         System.out.println("now -> " + System.currentTimeMillis());
     }
+
+    //이정 주기마다 수행
+    @Scheduled(cron = "")
+    public void yahooFinanceScheduling() {
+        // 지정된 회사 목록을 조회
+
+        // 회사마다 배당금 정보를 새로 스크래핑
+
+        // 스크래핑한 배당금 정보 중 데이터베이스에 없는 값은 저장
+    }
 }
