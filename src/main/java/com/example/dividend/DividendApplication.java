@@ -12,6 +12,7 @@ public class DividendApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DividendApplication.class, args);
-    }
 
+        System.out.println("Main -> " + Thread.currentThread().getName());
+    }
 }
